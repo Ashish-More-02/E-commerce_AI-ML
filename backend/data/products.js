@@ -71,6 +71,30 @@ const products = [
     rating: 4,
     numReviews: 12,
   },
+  {
+    name: 'Casual Cotton Shirt',
+    image: '/images/casual-shirt.jpg',
+    description:
+      'Upgrade your wardrobe with this stylish casual cotton shirt. Comfortable and versatile, perfect for various occasions and a must-have for any fashion-forward individual.',
+    brand: 'FashionCo',
+    category: 'Apparel',
+    price: 39.99,
+    countInStock: 15,
+    rating: 4.5,
+    numReviews: 8,
+  },
+  {
+    name: 'Casual Cotton Shirt',
+    image: '/images/casual-shirt.jpg',
+    description:
+      'Upgrade your wardrobe with this stylish casual cotton shirt. Comfortable and versatile, perfect for various occasions and a must-have for any fashion-forward individual.',
+    brand: 'FashionCo',
+    category: 'Apparel',
+    price: 39.99,
+    countInStock: 15,
+    rating: 4.5,
+    numReviews: 8,
+  },
 ];
 
 export default products;
