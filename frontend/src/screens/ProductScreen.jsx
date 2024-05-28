@@ -214,7 +214,7 @@ const ProductScreen = () => {
                       >
                         Submit
                       </Button>
-                      {<h1> Recommended products for you!</h1>}
+                      
                     </Form>
                   ) : (
                     <Message>
@@ -224,6 +224,7 @@ const ProductScreen = () => {
                 </ListGroup.Item>
               </ListGroup>
             </Col>
+            {<h1> Recommended products for you!</h1>}
           </Row>
           <Row md={10}>
           <RandomMobiles />

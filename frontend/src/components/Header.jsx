@@ -8,6 +8,7 @@ import { logout } from '../slices/authSlice';
 import SearchBox from './SearchBox';
 import logo from '../assets/logo.png';
 import { resetCart } from '../slices/cartSlice';
+import DarkModeButton from './DarkModebutton';
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -88,6 +89,7 @@ const Header = () => {
                   </LinkContainer>
                 </NavDropdown>
               )}
+              <DarkModeButton />
             </Nav>
           </Navbar.Collapse>
         </Container>

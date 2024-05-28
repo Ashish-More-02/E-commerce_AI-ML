@@ -8,6 +8,8 @@ import Message from '../components/Message';
 import Paginate from '../components/Paginate';
 import ProductCarousel from '../components/ProductCarousel';
 import Meta from '../components/Meta';
+import DarkModeButton from '../components/DarkModebutton';
+import { useState } from 'react';
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
@@ -16,6 +18,12 @@ const HomeScreen = () => {
     keyword,
     pageNumber,
   });
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
 
   return (
     <>
@@ -39,7 +47,7 @@ const HomeScreen = () => {
           <Row>
             {data.products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                <Product product={product} />
+                <Product product={product} isDarkMode={isDarkMode}/>
               </Col>
             ))}
           </Row>
